@@ -1,7 +1,7 @@
 # Use the latest TimescaleDB image
 FROM timescale/timescaledb:latest-pg16
 
-
+ENV POSTGRES_PASSWORD=TESTPASSWORD
 # Copy the custom configuration file to the container
 COPY custom_postgresql.conf /etc/postgresql/postgresql.conf
 
